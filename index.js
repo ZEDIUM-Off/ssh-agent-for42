@@ -16,7 +16,7 @@ try {
 
     const homeSsh = homePath + '/.ssh';
 
-    console.log(`Adding GitHub.com keys to ${homeSsh}/known_hosts`);
+    console.log(`Adding GitHub.com and vogsphere-v2.42lyon.fr keys to ${homeSsh}/known_hosts`);
 
     fs.mkdirSync(homeSsh, { recursive: true });
     fs.appendFileSync(`${homeSsh}/known_hosts`, '\ngithub.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=\n');
